@@ -4,49 +4,126 @@ header>h1{
 
 .main-container{
     display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .calc-form{
-    border: 1px solid;
-    width: 100%;
-    padding: 24px;
-}
-
-.calc-form-result{
-    background-color:gainsboro;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 24px;
-}
-.calc-form-items{
+    width: 50%;
     padding: 10px;
-    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px none;
+    background:aquamarine;
+    border-radius: 10px;
 }
-.calc-form-items div{
+.form-items{
+    padding: 10px;
+    background-color:aquamarine;
+    border-radius:15px;
+    width: 80%;
+    border: 5px solid;
+}
+.form-items div{
     padding: 10px;
     font-size: 18px;
     font-weight: 700;
-}
-button{
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 40px;
-    border: none;
-    font-weight: 700;
-    font-size: 15px;
-    display: inline-block;
-    cursor: pointer;
-}
-#calc-button{
-    background-color:cadetblue;
-    color: white;
-}
-.download{
-    background-color: green;
-    color: white;
 }
 input{
     height: 24px;
     padding-right: 50%;
     border: none;
 }
+
+.result {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:aquamarine;
+    margin-top: 10px;
+    border-radius:15px;
+    width: 80%;
+    border: 5px solid;
+  }  
+  
+  .form-result {
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+  width: 50%;
+  border: 1px ;
+}
+  
+  .form-result h4 {
+    margin-top: 10px;
+  }
+  
+  .form-result button {
+    margin-top: 10px;
+  }
+  
+  /* Menambahkan style pada button */
+    #reset-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  h4 {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .penyakit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+button{
+    margin: auto;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;    
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+#calc-button{
+    background-color:green;
+    color: white;
+    border-radius: 10px;
+}
+#reset-button{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.download{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+.form-consul button {
+    background-color:dodgerblue;
+    color: #fff;
+    cursor: pointer;
+  }
